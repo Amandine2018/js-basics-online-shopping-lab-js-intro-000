@@ -1,4 +1,3 @@
-
 var cart = [];
 
 function getCart() {
@@ -22,7 +21,7 @@ function setCart(c) {
 
 function addToCart(item) {
   var itemObject = {itemName : item,
-                    price : 5//Math.ceil(Math.random() * 100)
+                    price : Math.ceil(Math.random() * 100)
                   }
   cart.push(itemObject);
   return `${itemObject.itemName} has been added to your cart.`
@@ -66,7 +65,7 @@ function total() {
 
 function removeFromCart(item) {
   for (let i = 0; i < cart.length; i++) {
-    if (cart[i].itemName == item) {
+    if (cart[i].itemName === item) {
       cart.splice(i, 1);
       return viewCart();
     } else {
