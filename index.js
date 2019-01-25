@@ -50,7 +50,7 @@ function viewCart() {
 function total() {
   var tot = 0;
   for (let i = 0; i < cart.length; i++) {
-    tot += cart[i].price;  
+    tot += cart[i].price;
   }
   return tot;
 }
