@@ -9,13 +9,21 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
+/*function addToCart(item) {
   var itemPrice = Math.ceil(Math.random() * 100);
   var itemObject = {itemName : item,
                     price :itemPrice
                   };
   cart.push(itemObject);
   return `${itemObject.itemName} has been added to your cart.`
+}*/
+
+function addToCart(item) {
+// write your code here
+  var price = Math.ceil((Math.random() * 100);
+  cart.push({[item]: price});
+  console.log(`${item} has been added to your cart.`)
+  return cart;
 }
 
 /*function addToCart(item) {
