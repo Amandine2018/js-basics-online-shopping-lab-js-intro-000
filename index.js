@@ -31,7 +31,7 @@ function addToCart(item) {
   cart.push({itemName : item,
                     price : Math.ceil(Math.random() * 100)
                   })
-  return `${itemObject.itemName} has been added to your cart.`
+  return `${item} has been added to your cart.`
 }
 
 
