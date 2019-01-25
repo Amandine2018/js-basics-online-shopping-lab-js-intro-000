@@ -1,4 +1,4 @@
-math.import;
+math.import();
 
 var cart = [];
 
