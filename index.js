@@ -19,20 +19,20 @@ function setCart(c) {
 }*/
 
 
-/*function addToCart(item) {
+function addToCart(item) {
   var itemObject = {itemName : item,
                     price : Math.ceil(Math.random() * 100)
                   }
   cart.push(itemObject);
   return `${itemObject.itemName} has been added to your cart.`
-}*/
+}
 
-function addToCart(item) {
+/*function addToCart(item) {
   cart.push({itemName : item,
                     price : Math.ceil(Math.random() * 100)
                   })
   return `${item} has been added to your cart.`
-}
+}*/
 
 
 function viewCart() {
@@ -80,6 +80,6 @@ function placeOrder(cardNumber) {
   } else {
     var tot = total();
     setCart(0);
-    return `Your total cost is $${tot}, which will be charged to the card ${cardNumber}`
+    return `Your total cost is $${tot}, which will be charged to the card ${cardNumber}.`
   }
 }
