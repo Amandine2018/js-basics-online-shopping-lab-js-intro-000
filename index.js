@@ -1,3 +1,5 @@
+import * as math from 'mathjs';
+
 var cart = [];
 
 function getCart() {
