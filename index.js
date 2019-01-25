@@ -149,4 +149,3 @@ function total() {
 
   return t
 }
-
