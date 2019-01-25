@@ -1,4 +1,3 @@
-import * as math from 'mathjs';
 
 var cart = [];
 
@@ -23,7 +22,7 @@ function setCart(c) {
 
 function addToCart(item) {
   var itemObject = {itemName : item,
-                    price : Math.ceil(Math.random() * 100)
+                    price : 5//Math.ceil(Math.random() * 100)
                   }
   cart.push(itemObject);
   return `${itemObject.itemName} has been added to your cart.`
