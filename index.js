@@ -11,8 +11,8 @@ function setCart(c) {
 
 function addToCart(item) {
   var itemPrice = Math.ceil(Math.random() * 100);
-  var itemObject = {[itemName] : item,
-                    [price] :itemPrice
+  var itemObject = {itemName : item,
+                    price :itemPrice
                   };
   cart.push(itemObject);
   return `${itemObject.itemName} has been added to your cart.`
