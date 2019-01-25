@@ -9,16 +9,6 @@ function setCart(c) {
   return cart;
 }
 
-/*function addToCart(item) {
-  var price = Math.ceil(Math.random() * 100);
-  var itemObject = {itemName : item,
-                    itemPrice : price
-                  };
-  cart.push(itemObject);
-  return `${itemObject.itemName} has been added to your cart.`
-}*/
-
-
 function addToCart(item) {
   var itemObject = {
                     itemName : item,
@@ -27,14 +17,6 @@ function addToCart(item) {
   cart.push(itemObject);
   return `${itemObject.itemName} has been added to your cart.`
 }
-
-/*function addToCart(item) {
-  cart.push({itemName : item,
-                    itemPrice : Math.ceil(Math.random() * 100)
-                  })
-  return `${item} has been added to your cart.`
-}*/
-
 
 function viewCart() {
   var message = "";
@@ -48,7 +30,7 @@ function viewCart() {
     if (i < cart.length -2) {
       message += ", ";
     } else if (i == cart.length -2) {
-      message += " and ";
+      message += ", and ";
     } else {
       message += ".";
     }
