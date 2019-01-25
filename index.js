@@ -10,9 +10,9 @@ function setCart(c) {
 }
 
 /*function addToCart(item) {
-  var itemPrice = Math.ceil(Math.random() * 100);
+  var price = Math.ceil(Math.random() * 100);
   var itemObject = {itemName : item,
-                    price :itemPrice
+                    itemPrice : price
                   };
   cart.push(itemObject);
   return `${itemObject.itemName} has been added to your cart.`
@@ -22,7 +22,7 @@ function setCart(c) {
 function addToCart(item) {
   var itemObject = {
                     itemName : item,
-                    price : Math.ceil(Math.random() * 100)
+                    itemPrice : Math.ceil(Math.random() * 100)
                   };
   cart.push(itemObject);
   return `${itemObject.itemName} has been added to your cart.`
@@ -30,7 +30,7 @@ function addToCart(item) {
 
 /*function addToCart(item) {
   cart.push({itemName : item,
-                    price : Math.ceil(Math.random() * 100)
+                    itemPrice : Math.ceil(Math.random() * 100)
                   })
   return `${item} has been added to your cart.`
 }*/
@@ -44,7 +44,7 @@ function viewCart() {
     message = "In your cart, you have "
   }
   for (let i = 0; i < cart.length; i++) {
-    message += `${cart[i].itemName} at $${cart[i].price}`;
+    message += `${cart[i].itemName} at $${cart[i].itemPrice}`;
     if (i < cart.length -2) {
       message += ", ";
     } else if (i == cart.length -2) {
@@ -59,7 +59,7 @@ function viewCart() {
 function total() {
   var tot = 0;
   for (let i = 0; i < cart.length; i++) {
-    tot += cart[i].price;
+    tot += cart[i].itemPrice;
   }
   return tot;
 }
