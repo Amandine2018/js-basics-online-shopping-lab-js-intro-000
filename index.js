@@ -18,21 +18,14 @@ function setCart(c) {
   return `${itemObject.itemName} has been added to your cart.`
 }*/
 
-function addToCart(item) {
-// write your code here
-  var price = Math.ceil((Math.random() * 100);
-  cart.push({[item]: price});
-  console.log(`${item} has been added to your cart.`)
-  return cart;
-}
 
-/*function addToCart(item) {
+function addToCart(item) {
   var itemObject = {itemName : item,
                     price : Math.ceil(Math.random() * 100)
                   }
   cart.push(itemObject);
   return `${itemObject.itemName} has been added to your cart.`
-}*/
+}
 
 function viewCart() {
   var message = "";
@@ -55,7 +48,11 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  var tot = 0;
+  for (let i = 0; i < cart.length; i++) {
+    tot += cart[i].price;  
+  }
+  return tot;
 }
 
 function removeFromCart(item) {
