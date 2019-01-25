@@ -74,13 +74,9 @@ function placeOrder(cardNumber) {
 var cart = []
 
 
- function setCart(newCart) {	function setCart(newCart) {
-  cart = newCart;	  cart = newCart;
-@@ -15,3 +15,70 @@ function total() {
-
-
-   return t	  return t
-}	}
+ function setCart(newCart) {
+  cart = newCart;	 
+}	
 
  function getCart(){
   return cart
